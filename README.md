@@ -26,7 +26,9 @@ Projeto base: https://github.com/marciocorbolan/puc-rio-sprint-desenvolvimento-f
 ```mermaid
 graph LR
     subgraph FrontEnd [" Interface (Front-End) "]
-        FE["Front-End Web<br/>(Docker Container)"]
+        NGINX["Servidor Web Nginx<br/>(Docker Container)"]
+        FE["SPA Web<br/>(HTML5 / JS / Bootstrap)"]
+        NGINX --- FE
     end
 
     subgraph BackEnd [" API (Back-End) "]
@@ -36,7 +38,7 @@ graph LR
     DB[("Banco de Dados<br/>SQLite")]
     EXT["API Externa<br/>(API Futebol)"]
 
-    FE <-->|REST / JSON| BE
+    NGINX <-->|REST / JSON| BE
     BE <-->|SQLAlchemy| DB
     BE <-->|HTTP / REST| EXT
 ```
