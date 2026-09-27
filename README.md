@@ -23,8 +23,6 @@ Projeto base: https://github.com/marciocorbolan/puc-rio-sprint-desenvolvimento-f
 
 ## 🛠️ Estrutura do Projeto
 
-## 📋 Estrutura
-
 ```mermaid
 graph LR
     subgraph FrontEnd [" Interface (Front-End) "]
