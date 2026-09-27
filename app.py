@@ -22,7 +22,7 @@ def create_app():
     app.config.from_object(config)
 
     # Permite que um index.html local acesse a API em qualquer porta
-    CORS(app)
+    CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 
     # Inicializa o banco de dados
     db.init_app(app)
