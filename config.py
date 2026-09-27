@@ -27,3 +27,8 @@ JWT_BLACKLIST_EXPIRATION_HOURS = 25
 # Tempo de expiração do Refresh Token (em dias)
 JWT_REFRESH_EXPIRATION_DAYS = 7
 # =================================================================
+
+# =================== CONFIGURAÇÕES API-FUTEBOL ===================
+FOOTBALL_API_URL = 'https://api.api-futebol.com.br/v1'
+FOOTBALL_API_KEY = 'test_e368225e17a84d95716b99d0b5eda4'
+# =================================================================
